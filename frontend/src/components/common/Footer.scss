@@ -1,0 +1,30 @@
+.footer {
+  &-nav a {
+    color: white;
+  }
+  &__wrapper {
+    &-nav h3,
+    &-suport h3,
+    &-fill h3 {
+      color: white;
+      font-weight: 700;
+    }
+    &-contact p {
+      color: white;
+    }
+    &-fill p {
+      color: white;
+      font-size: 18px;
+    }
+  }
+  &__fill-box {
+    width: 300px;
+    background-color: green;
+    & input {
+      border: none;
+    }
+    & button {
+      width: 150px;
+    }
+  }
+}
