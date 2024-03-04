@@ -9,8 +9,9 @@ const Footer = () => {
     <footer
       style={{
         background: "black",
+        zIndex: "50",
       }}
-      className="px-5 py-3 d-flex align-items-md-start flex-column flex-md-row justify-content-md-between align-items-center"
+      className="px-5 py-3 d-flex align-items-md-start flex-column flex-md-row justify-content-md-between align-items-center position-relative"
     >
       <div className="d-flex flex-column align-items-center align-items-md-start footer__wrapper-contact">
         <img

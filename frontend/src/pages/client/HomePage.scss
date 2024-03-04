@@ -1,0 +1,35 @@
+.homepage {
+  &-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  & .carousel {
+    &__content {
+      z-index: 50;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      & h3,
+      h1 {
+        color: white;
+        font-weight: 400;
+      }
+    }
+    &__btn {
+      color: var(--white-color);
+    }
+    &__overlay {
+      z-index: 0;
+      background-color: rgba(0, 0, 0, 0.45);
+    }
+  }
+  &-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    @media screen and (min-width: "768px") {
+      padding-left: 100px;
+    }
+  }
+}

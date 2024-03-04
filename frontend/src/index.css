@@ -1,4 +1,6 @@
 :root {
+  --white-color: white;
+  --green-color: green;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -45,6 +47,12 @@ h2{
   }
 }
 h2{
+  font-size: 20px;
+  @media screen and(max-width: 768px){
+    font-size: 18px;
+  }
+}
+h3{
   font-size: 20px;
   @media screen and(max-width: 768px){
     font-size: 18px;

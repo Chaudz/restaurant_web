@@ -1,0 +1,7 @@
+.table {
+  @media screen and (min-width: "576px") {
+    &__food {
+      max-width: calc(100% - 200px);
+    }
+  }
+}

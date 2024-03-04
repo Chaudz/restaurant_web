@@ -1,0 +1,20 @@
+.food {
+  @media screen and (max-width: "576px") {
+    &-card {
+      width: 100% !important;
+    }
+  }
+
+  &-card {
+    &__wrapper-img {
+      overflow: hidden;
+    }
+    & img {
+      overflow: hidden;
+      transition: 1s ease-in-out;
+    }
+    & img:hover {
+      transform: scale(1.5);
+    }
+  }
+}

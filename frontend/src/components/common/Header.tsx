@@ -15,7 +15,7 @@ const Header = () => {
   };
 
   return (
-    <div className="header d-flex align-items-center justify-content-between">
+    <div className="header position-fixed start-0 top-0 end-0 d-flex align-items-center justify-content-between">
       <img src={logo} alt="" className="header_logo" />
       <div
         className={`header_nav-menu align-md-items-center gap-md-5 d-flex flex-md-row flex-column ${
@@ -34,7 +34,7 @@ const Header = () => {
           <CiSearch className="header_search-icon position-absolute top-50" />
         </div>
         <button
-          className="btn btn-close_dropmenu position-absolute d-md-none"
+          className="btn btn-outline-primary btn-close_dropmenu position-absolute d-md-none"
           onClick={handleToggleMenu}
         >
           <IoCloseSharp style={{ fontSize: "30px" }} />
@@ -46,7 +46,10 @@ const Header = () => {
           <CiShoppingCart style={{ fontSize: "30px" }} />
         </button>
       </div>
-      <button className="btn btn-success d-lg-none" onClick={handleToggleMenu}>
+      <button
+        className="btn btn-outline-warning d-lg-none"
+        onClick={handleToggleMenu}
+      >
         <AiOutlineMenu style={{ fontSize: "25px" }} />
       </button>
       <div
