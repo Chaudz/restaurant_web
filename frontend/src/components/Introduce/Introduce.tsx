@@ -1,9 +1,8 @@
-import CardIntroduce from "../IntroduceCard/IntroduceCard";
 import daiHang from "../../assets/images/nhahangdaihang.jpg";
-import "./Introduce.scss";
 import IntroduceCardList from "../IntroduceCardList/IntroduceCardList";
+import "./Introduce.scss";
 
-function Introduce(props) {
+function Introduce() {
   return (
     <div className="homepage__introduce">
       <h3>GIỚI THIỆU</h3>

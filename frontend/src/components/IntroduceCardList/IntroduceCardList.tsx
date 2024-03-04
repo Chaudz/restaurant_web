@@ -22,7 +22,7 @@ const introduceList = [
   },
 ];
 
-function IntroduceCardList(props) {
+function IntroduceCardList() {
   return (
     <div className="d-flex flex-column gap-3">
       {introduceList.map((introduceCard, index) => {

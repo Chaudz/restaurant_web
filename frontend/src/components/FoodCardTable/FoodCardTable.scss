@@ -1,7 +1,12 @@
 .table {
-  @media screen and (min-width: "576px") {
-    &__food {
-      max-width: calc(100% - 200px);
+  &__food {
+    & h2 {
+      color: var(--green-color);
+    }
+    @media screen and (min-width: "576px") {
+      & {
+        max-width: calc(100% - 200px);
+      }
     }
   }
 }
