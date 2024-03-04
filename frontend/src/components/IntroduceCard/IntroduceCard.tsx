@@ -9,7 +9,7 @@ interface CardIntroduceProps {
 
 function IntroduceCard({ title, desc, icon }: CardIntroduceProps) {
   return (
-    <div className="d-flex align-items-start gap-2">
+    <div className="d-flex align-items-start gap-2" data-aos="fade-right">
       <div className="introduce-card__wrapper-icon d-flex">{icon}</div>
       <div>
         <h3>{title}</h3>

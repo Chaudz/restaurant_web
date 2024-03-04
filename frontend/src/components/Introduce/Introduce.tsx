@@ -5,10 +5,15 @@ import "./Introduce.scss";
 function Introduce() {
   return (
     <div className="homepage__introduce">
-      <h3>GIỚI THIỆU</h3>
-      <h2>LỰA CHỌN CỦA CHÚNG TÔI?</h2>
-      <div className="d-flex gap-5 flex-column flex-md-row">
-        <img src={daiHang} alt="" className="homepage__introduce-img" />
+      <h3 data-aos="fade-right">GIỚI THIỆU</h3>
+      <h2 data-aos="fade-right">LỰA CHỌN CỦA CHÚNG TÔI?</h2>
+      <div className="d-flex mt-2 gap-5 flex-column flex-md-row">
+        <img
+          data-aos="zoom-in"
+          src={daiHang}
+          alt=""
+          className="homepage__introduce-img"
+        />
         <div>
           <IntroduceCardList />
         </div>

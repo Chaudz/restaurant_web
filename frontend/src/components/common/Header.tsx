@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "../../assets/images/logo.png";
+import logo from "../../assets/images/logodaihang.jpg";
 import screenUrls from "../../constants/screenUrls";
 import { CiShoppingCart, CiSearch } from "react-icons/ci";
 import { AiOutlineMenu } from "react-icons/ai";

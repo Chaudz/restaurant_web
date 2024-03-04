@@ -1,7 +1,9 @@
 import Carousel from "react-bootstrap/Carousel";
 import FoodCardTable from "../../components/FoodCardTable/FoodCardTable";
-import "./HomePage.scss";
 import Introduce from "../../components/Introduce/Introduce";
+import RestaurantLocation from "../../components/RestaurantLocation/RestaurantLocation";
+import Contact from "../../components/Contact/Contact";
+import "./HomePage.scss";
 
 const HomePage = () => {
   return (
@@ -117,6 +119,8 @@ const HomePage = () => {
       >
         <FoodCardTable />
         <Introduce />
+        <RestaurantLocation />
+        <Contact />
       </div>
     </div>
   );

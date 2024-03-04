@@ -32,8 +32,8 @@ function FoodCardTable() {
 
   return (
     <div className="table__food w-100 py-5">
-      <h3>THỰC ĐƠN</h3>
-      <div className="d-flex justify-content-between">
+      <h3 data-aos="fade-right">THỰC ĐƠN</h3>
+      <div className="d-flex justify-content-between" data-aos="fade-right">
         <h2>BẠN MUỐN ĂN GÌ</h2>
         <button className="btn btn-warning d-flex align-items-center">
           <VscLayoutMenubar className="me-2" />

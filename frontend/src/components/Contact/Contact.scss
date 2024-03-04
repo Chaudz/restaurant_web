@@ -1,0 +1,22 @@
+.contact {
+  &__fill {
+    border: 1px solid #ccc;
+    &.name,
+    &.email {
+      width: 50%;
+    }
+  }
+  &__wrapper {
+    @media screen and (min-width: "576px") {
+      & {
+        max-width: calc(100% - 200px);
+      }
+      &-left {
+        width: 40%;
+      }
+      &-right {
+        width: 60%;
+      }
+    }
+  }
+}

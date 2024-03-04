@@ -12,7 +12,7 @@ function FoodCard(props: { foodCard: IFoodCard }) {
   const { foodCard } = props;
 
   return (
-    <Card style={{ width: "18rem" }} className="food-card">
+    <Card style={{ width: "18rem" }} className="food-card" data-aos="zoom-in">
       <div className="food-card__wrapper-img">
         <CardImg variant="top" src={foodCard.img} />
       </div>

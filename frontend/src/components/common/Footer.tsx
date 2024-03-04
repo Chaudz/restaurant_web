@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Logo from "../../assets/images/logo.png";
+import Logo from "../../assets/images/logodaihang.jpg";
 import screenUrls from "../../constants/screenUrls";
 import { FaChevronRight } from "react-icons/fa";
 import "./Footer.scss";
