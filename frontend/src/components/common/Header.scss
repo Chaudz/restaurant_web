@@ -1,4 +1,5 @@
 .header {
+  height: var(--header-height);
   z-index: 100;
   padding: 10px 80px;
   background-color: rgba(0, 0, 0, 0.637);
@@ -7,8 +8,9 @@
     padding: 10px 20px;
   }
   &_logo {
-    width: 100px;
+    width: 80px;
     object-fit: cover;
+    border-radius: 999px;
     @media screen and (max-width: 576px) {
       width: 70px;
     }
@@ -19,8 +21,17 @@
   &_search {
     &-box {
       & input {
+        cursor: pointer;
         border: none;
-        padding: 10px 50px 10px 5px;
+        padding: 10px 50px 10px 10px;
+        width: 150px;
+        border-radius: 999px;
+        transition: 0.3s ease-in-out;
+      }
+    }
+    &-box.active {
+      & input {
+        width: 300px;
       }
     }
     &-icon {

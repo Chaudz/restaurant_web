@@ -1,8 +1,8 @@
 import Carousel from "react-bootstrap/Carousel";
-import FoodCardTable from "../../components/FoodCardTable/FoodCardTable";
-import Introduce from "../../components/Introduce/Introduce";
-import RestaurantLocation from "../../components/RestaurantLocation/RestaurantLocation";
-import Contact from "../../components/Contact/Contact";
+import FoodCardTable from "../../../components/FoodCardTable/FoodCardTable";
+import Introduce from "../../../components/Introduce/Introduce";
+import RestaurantLocation from "../../../components/RestaurantLocation/RestaurantLocation";
+import Contact from "../../../components/Contact/Contact";
 import "./HomePage.scss";
 
 const HomePage = () => {

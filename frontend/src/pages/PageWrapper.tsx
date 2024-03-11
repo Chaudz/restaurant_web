@@ -21,7 +21,7 @@ const PageWrapper: React.FC<PageWrapperProps> = ({
 }) => {
   useEffect(() => {
     document.title = title;
-  }, []);
+  }, [title]);
 
   return (
     <div>

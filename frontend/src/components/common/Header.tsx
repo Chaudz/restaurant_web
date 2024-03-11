@@ -9,6 +9,7 @@ import "./Header.scss";
 
 const Header = () => {
   const [dropMenu, setDropMenu] = useState(false);
+  const [inputActive, setInputActive] = useState(false);
 
   const handleToggleMenu = () => {
     setDropMenu(!dropMenu);
@@ -16,21 +17,46 @@ const Header = () => {
 
   return (
     <div className="header position-fixed start-0 top-0 end-0 d-flex align-items-center justify-content-between">
-      <img src={logo} alt="" className="header_logo" />
+      <Link to={screenUrls.HOME}>
+        <img src={logo} alt="" className="header_logo" />
+      </Link>
       <div
         className={`header_nav-menu align-md-items-center gap-md-5 d-flex flex-md-row flex-column ${
           dropMenu ? "active" : ""
         }`}
       >
-        <ul className="d-flex flex-md-row align-md-items-center flex-column gap-2 header_nav fontsize-content">
-          <Link to={screenUrls.HOME}>Trang chủ</Link>
-          <Link to={screenUrls.MENU}>Thực đơn</Link>
-          <Link to={screenUrls.BOOKING}>Đặt bàn</Link>
-          <Link to={screenUrls.INTRODUTION}>Giới thiệu</Link>
-          <Link to={screenUrls.CONTACT}>Liên hệ</Link>
+        <ul className="d-flex flex-md-row align-items-md-center flex-column gap-2 header_nav fontsize-content">
+          <Link to={screenUrls.HOME} onClick={handleToggleMenu}>
+            Trang chủ
+          </Link>
+          <Link to={screenUrls.MENU} onClick={handleToggleMenu}>
+            Thực đơn
+          </Link>
+          <Link to={screenUrls.BOOKING} onClick={handleToggleMenu}>
+            Đặt bàn
+          </Link>
+          <Link to={screenUrls.INTRODUTION} onClick={handleToggleMenu}>
+            Giới thiệu
+          </Link>
+          <Link to={screenUrls.CONTACT} onClick={handleToggleMenu}>
+            Liên hệ
+          </Link>
         </ul>
-        <div className="header_search-box position-relative">
-          <input type="text" placeholder="Tìm kiếm theo tên" />
+        <div
+          className={`header_search-box position-relative ${
+            inputActive ? "active" : ""
+          }`}
+        >
+          <input
+            type="text"
+            placeholder="Tìm kiếm theo tên"
+            onClick={() => {
+              setInputActive(true);
+            }}
+            onBlur={() => {
+              setInputActive(false);
+            }}
+          />
           <CiSearch className="header_search-icon position-absolute top-50" />
         </div>
         <button

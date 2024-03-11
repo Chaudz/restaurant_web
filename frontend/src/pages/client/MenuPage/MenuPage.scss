@@ -1,0 +1,17 @@
+.menupage {
+  margin-top: var(--header-height);
+  & .nav-menu {
+    &.active {
+      background-color: orange;
+      color: var(--white-color);
+    }
+  }
+  @media screen and (min-width: 768px) {
+    & .box-left {
+      width: 25%;
+    }
+    & .list-food__wrapper {
+      width: 75%;
+    }
+  }
+}

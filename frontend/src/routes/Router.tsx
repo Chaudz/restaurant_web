@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import screenUrls from "../constants/screenUrls";
-import HomePage from "../pages/client/HomePage";
+import { HomePage, MenuPage } from "../pages/client/index";
 import PageWrapper from "../pages/PageWrapper";
 
 const routerConfig = [
@@ -11,10 +11,16 @@ const routerConfig = [
     isHeader: true,
     isFooter: true,
   },
+  {
+    url: screenUrls.MENU,
+    component: MenuPage,
+    title: "Thực đơn",
+    isHeader: true,
+    isFooter: true,
+  },
 ];
 
 const AppRouter = () => {
-  console.log("===========+");
   return (
     <BrowserRouter>
       <Routes>

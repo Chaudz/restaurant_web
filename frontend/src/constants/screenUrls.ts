@@ -1,6 +1,6 @@
 const screenUrls = {
-  HOME: "",
-  MENU: "menu",
+  HOME: "/",
+  MENU: "/menu",
   BOOKING: "datban",
   INTRODUTION: "gioithieu",
   CONTACT: "lienhe",

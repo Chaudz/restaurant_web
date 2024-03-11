@@ -5,7 +5,7 @@ interface IFoodCard {
   id: number;
   title: string;
   img: string;
-  desc: string;
+  price: number;
 }
 
 function FoodCard(props: { foodCard: IFoodCard }) {
@@ -18,7 +18,17 @@ function FoodCard(props: { foodCard: IFoodCard }) {
       </div>
       <CardBody>
         <Card.Title>{foodCard.title}</Card.Title>
-        <CardText>{foodCard.desc}</CardText>
+        <CardText
+          style={{
+            fontWeight: 600,
+            color: "red",
+          }}
+        >
+          {foodCard.price.toLocaleString("vi-VN", {
+            style: "currency",
+            currency: "VND",
+          })}
+        </CardText>
         <div className="mt-2">
           <Button className="me-2 btn btn-warning">Đặt món</Button>
           <Button className="btn btn-warning">Xem chi tiết</Button>
