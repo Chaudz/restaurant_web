@@ -1,0 +1,10 @@
+.table-booking {
+  &__wrapper {
+    overflow: auto;
+
+    & td {
+      text-align: center;
+      border: 1px solid #ccc;
+    }
+  }
+}

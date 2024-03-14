@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import screenUrls from "../constants/screenUrls";
-import { HomePage, MenuPage } from "../pages/client/index";
+import { HomePage, MenuPage, BookTablePage } from "../pages/client/index";
 import PageWrapper from "../pages/PageWrapper";
 
 const routerConfig = [
@@ -15,6 +15,13 @@ const routerConfig = [
     url: screenUrls.MENU,
     component: MenuPage,
     title: "Thực đơn",
+    isHeader: true,
+    isFooter: true,
+  },
+  {
+    url: screenUrls.BOOKING,
+    component: BookTablePage,
+    title: "Đặt bàn",
     isHeader: true,
     isFooter: true,
   },

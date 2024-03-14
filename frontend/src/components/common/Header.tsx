@@ -15,6 +15,10 @@ const Header = () => {
     setDropMenu(!dropMenu);
   };
 
+  const handleCloseMenu = () => {
+    setDropMenu(false);
+  };
+
   return (
     <div className="header position-fixed start-0 top-0 end-0 d-flex align-items-center justify-content-between">
       <Link to={screenUrls.HOME}>
@@ -26,19 +30,19 @@ const Header = () => {
         }`}
       >
         <ul className="d-flex flex-md-row align-items-md-center flex-column gap-2 header_nav fontsize-content">
-          <Link to={screenUrls.HOME} onClick={handleToggleMenu}>
+          <Link to={screenUrls.HOME} onClick={handleCloseMenu}>
             Trang chủ
           </Link>
-          <Link to={screenUrls.MENU} onClick={handleToggleMenu}>
+          <Link to={screenUrls.MENU} onClick={handleCloseMenu}>
             Thực đơn
           </Link>
-          <Link to={screenUrls.BOOKING} onClick={handleToggleMenu}>
+          <Link to={screenUrls.BOOKING} onClick={handleCloseMenu}>
             Đặt bàn
           </Link>
-          <Link to={screenUrls.INTRODUTION} onClick={handleToggleMenu}>
+          <Link to={screenUrls.INTRODUTION} onClick={handleCloseMenu}>
             Giới thiệu
           </Link>
-          <Link to={screenUrls.CONTACT} onClick={handleToggleMenu}>
+          <Link to={screenUrls.CONTACT} onClick={handleCloseMenu}>
             Liên hệ
           </Link>
         </ul>
@@ -53,6 +57,7 @@ const Header = () => {
             onClick={() => {
               setInputActive(true);
             }}
+            style={{ outline: "none" }}
             onBlur={() => {
               setInputActive(false);
             }}
